@@ -1,0 +1,158 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container .result {
+  background-color: #5239f5;
+  text-align: center;
+  border-radius: 40px;
+  padding: 30px 10px;
+}
+.container .result p:first-of-type {
+  color: whitesmoke;
+  font-size: 22px;
+  opacity: 0.7;
+}
+.container .result div {
+  width: 150px;
+  background: linear-gradient(
+    352deg,
+    rgba(82, 57, 245, 1) 0%,
+    rgba(77, 34, 201, 1) 35%
+  );
+
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .result div span:first-of-type {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.container .result div span:last-of-type {
+  color: whitesmoke;
+  opacity: 0.7;
+}
+.container .result p:nth-last-of-type(2) {
+  font-size: 16px;
+  color: white;
+  font-size: 25px;
+}
+.container .result p:last-of-type {
+  width: 70%;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* start summary styling */
+
+.summary {
+  border-radius: 40px;
+  padding: 30px 10px;
+}
+.summary h4 {
+  color: black;
+  font-weight: bold;
+}
+.summary div {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.summary div span:first-of-type {
+  width: 200px;
+  display: inline-block;
+}
+.summary div span:last-of-type {
+}
+
+.summary div i {
+  margin-right: 10px;
+}
+.summary div:nth-of-type(1) {
+  background-color: rgba(255, 0, 0, 0.096);
+}
+.summary div:nth-of-type(1) i,
+.summary div:nth-of-type(1) span:nth-of-type(1) {
+  color: red;
+  font-weight: bold;
+}
+.summary div:nth-of-type(2) {
+  background-color: rgba(255, 157, 0, 0.092);
+}
+.summary div:nth-of-type(2) i,
+.summary div:nth-of-type(2) span:nth-of-type(1) {
+  color: orange;
+  font-weight: bold;
+}
+.summary div:nth-of-type(3) {
+  background-color: rgba(15, 255, 15, 0.112);
+}
+.summary div:nth-of-type(3) i,
+.summary div:nth-of-type(3) span:nth-of-type(1) {
+  color: green;
+  font-weight: bold;
+}
+.summary div:nth-of-type(4) {
+  background-color: rgba(15, 163, 255, 0.112);
+}
+.summary div:nth-of-type(4) i,
+.summary div:nth-of-type(4) span:nth-of-type(1) {
+  color: rgb(0, 132, 255);
+  font-weight: bold;
+}
+button {
+  width: 100%;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  background-color: #313a5b;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-size: 22px;
+}
+button:hover {
+  background-color: #5239f5;
+}
+
+/* end summary styling */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .result {
+    border-radius: 0px 0px 70px 70px;
+  }
+}
+@media (max-width: 900px) {
+  .summary div {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    margin: 0;
+  }
+}
+7
